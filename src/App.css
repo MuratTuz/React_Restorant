@@ -9,6 +9,9 @@
   border-bottom: 1px ridge;
   min-height:400px;
 }
+.row-media {
+  margin-bottom: 15px;
+}
 
 .footer{
   background-color: #D1C4E9;
