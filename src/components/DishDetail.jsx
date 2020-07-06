@@ -96,8 +96,8 @@ class DishDetail extends Component {
     }
 
     render() {
-        //const yourNameError = this.state.errors;
-        return (//Form kismini LocalForm haline donustur ve validation lari ekle
+        const yourNameError = this.state.errors;
+        return (
 
             <div className="container">
                 <div className="row">
@@ -142,10 +142,10 @@ class DishDetail extends Component {
                                         <Input type="text" id="yourName" name="yourName"
                                             innerRef={(input) => this.yourname = input}
                                             // value={this.state.lastname}
-                                            valid={this.state.errors === ''}
-                                            invalid={this.state.errors !== ''}
+                                            valid={yourNameError === ''}
+                                            invalid={yourNameError !== ''}
                                             onChange={this.handleInputChange} />
-                                        <FormFeedback>{this.state.errors}</FormFeedback>
+                                        <FormFeedback>{yourNameError}</FormFeedback>
                                     </Col>
                                 </FormGroup>
                                 <FormGroup>
